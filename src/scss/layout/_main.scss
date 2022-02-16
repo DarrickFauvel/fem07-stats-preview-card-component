@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  max-width: 32.7rem;
+
+  @media (min-width: $breakpoint-lg) {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 92rem;
+    min-height: 100vh;
+  }
+}

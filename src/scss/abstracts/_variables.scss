@@ -1,0 +1,20 @@
+// Primary colors
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+// Neutral color for paragraphs
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+// Neutral color for background, headings, buttons
+$very-light-gray: hsl(0, 0%, 95%);
+
+// Colors by element
+$clr-card-1: $bright-orange;
+$clr-card-2: $dark-cyan;
+$clr-card-3: $very-dark-cyan;
+$clr-paragraph: $transparent-white;
+$clr-background: $very-light-gray;
+$clr-heading: $very-light-gray;
+$clr-button: $very-light-gray;
+
+// Breakpoints
+$breakpoint-lg: 992px;
