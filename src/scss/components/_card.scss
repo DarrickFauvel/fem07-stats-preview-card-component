@@ -27,9 +27,22 @@
       mix-blend-mode: multiply;
       opacity: 0.75;
 
+      &.image-header-desktop {
+        display: none;
+      }
+
       @media (min-width: $breakpoint-xlg) {
         height: 100%;
         object-fit: cover;
+
+        &.image-header-mobile {
+          display: none;
+        }
+
+        &.image-header-desktop {
+          display: block;
+          width: 100%;
+        }
       }
     }
   }
