@@ -1,6 +1,11 @@
+@use '../abstracts' as *;
+
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  padding: 0 2rem;
+
+  @media (min-width: $breakpoint-xlg) {
+    height: 100vh;
+  }
 }
