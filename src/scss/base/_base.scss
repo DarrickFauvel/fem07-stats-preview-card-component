@@ -1,9 +1,10 @@
+@use '../abstracts' as *;
+
 body {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: $ff-inter;
   font-size: 1.5rem;
   font-weight: 400;
-  background-color: #f2f2f2;
-  padding: 2rem;
+  background-color: $clr-bg-main;
 }
 
 .visually-hidden {
