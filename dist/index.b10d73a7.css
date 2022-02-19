@@ -1,0 +1,190 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@200&display=swap";
+:root {
+  font-size: 62.5%;
+}
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* For frameworks React & Next */
+#root,
+#__next {
+  isolation: isolate;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: #090b1a;
+}
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+.card {
+  display: grid;
+  grid-template: auto/1fr;
+  grid-template-areas: "image" "body";
+  background-color: #1b1938;
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: 0.8rem;
+  overflow: hidden;
+  max-width: 32.7rem;
+  margin: 2rem 0;
+}
+@media (min-width: 1200px) {
+  .card {
+    grid-template: auto/1fr 1fr;
+    grid-template-areas: "body image";
+    max-width: 111rem;
+  }
+}
+.card-image {
+  grid-area: image;
+  background-color: #aa5cdb;
+}
+.card-image img {
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+.card-image img.image-header-desktop {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .card-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-image img.image-header-mobile {
+    display: none;
+  }
+  .card-image img.image-header-desktop {
+    display: block;
+    width: 100%;
+  }
+}
+.card-body {
+  grid-area: body;
+  padding: 3rem;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .card-body {
+    text-align: start;
+    padding: 7.1rem 7.1rem 6rem;
+  }
+}
+.card-title {
+  font-size: 2.8rem;
+  color: white;
+  line-height: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+@media (min-width: 1200px) {
+  .card-title {
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+  }
+}
+.card-title span {
+  color: #aa5cdb;
+}
+.card-text {
+  line-height: 2.5rem;
+  margin-bottom: 4rem;
+}
+.card .list-group {
+  display: grid;
+  grid-template: auto/1fr;
+  gap: 2.4rem;
+  list-style: none;
+  padding: 0;
+}
+@media (min-width: 1200px) {
+  .card .list-group {
+    grid-template: auto/repeat(3, 1fr);
+    margin-top: 7.1rem;
+  }
+}
+.card .list-group .item-title {
+  font-size: 2.4rem;
+  color: white;
+}
+.card .list-group .item-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  line-height: 2.5rem;
+}
+.attribution {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin: 2rem 0;
+}
+.attribution a {
+  color: #3e52a3;
+}
+.container {
+  display: grid;
+  grid-template: 1fr/1fr;
+  padding: 0 2rem;
+}
+@media (min-width: 1200px) {
+  .container {
+    height: 100vh;
+  }
+}
+.main {
+  justify-self: center;
+  align-self: center;
+}
+/*# sourceMappingURL=index.b10d73a7.css.map */
