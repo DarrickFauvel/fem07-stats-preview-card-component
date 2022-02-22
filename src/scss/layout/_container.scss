@@ -2,7 +2,7 @@
 
 .container {
   display: grid;
-  grid-template: 1fr min-content / 1fr;
+  grid-template: 100vh min-content / 1fr;
   padding: 0 2rem;
 
   @media (min-width: $breakpoint-xlg) {
