@@ -92,22 +92,8 @@ body {
 .card-image img {
   mix-blend-mode: multiply;
   opacity: 0.75;
-}
-.card-image img.image-header-desktop {
-  display: none;
-}
-@media (min-width: 1200px) {
-  .card-image img {
-    height: 100%;
-    object-fit: cover;
-  }
-  .card-image img.image-header-mobile {
-    display: none;
-  }
-  .card-image img.image-header-desktop {
-    display: block;
-    width: 100%;
-  }
+  width: 100%;
+  object-fit: cover;
 }
 .card-body {
   grid-area: body;
