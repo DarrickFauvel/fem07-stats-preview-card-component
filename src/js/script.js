@@ -1,4 +1,6 @@
 const mainEl = document.querySelector('main')
 const footerEl = document.querySelector('footer')
 
-mainEl.style.marginTop = footerEl.offsetHeight + 'px'
+const halfHeightOfFooter = Math.round(footerEl.offsetHeight / 2)
+
+mainEl.style.paddingBlock = halfHeightOfFooter + 'px'
