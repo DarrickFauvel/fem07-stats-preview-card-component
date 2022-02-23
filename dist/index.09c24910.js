@@ -1,6 +1,5 @@
-const mainEl = document.querySelector('main');
+const cardEl = document.querySelector('.card');
 const footerEl = document.querySelector('footer');
-const halfHeightOfFooter = Math.round(footerEl.offsetHeight / 2);
-mainEl.style.paddingBlock = halfHeightOfFooter + 'px';
+cardEl.style.marginTop = footerEl.offsetHeight + 'px';
 
 //# sourceMappingURL=index.09c24910.js.map
