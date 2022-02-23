@@ -89,13 +89,13 @@
     }
 
     .item {
-      &-title {
+      &-stat {
         font-size: 2.4rem;
         font-weight: 700;
         color: $clr-heading-stats-main;
       }
 
-      &-text {
+      &-label {
         font-family: $ff-secondary;
         font-size: 1.2rem;
         color: $clr-heading-stats;
