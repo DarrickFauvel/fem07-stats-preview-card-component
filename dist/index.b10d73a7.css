@@ -110,7 +110,7 @@ body {
 }
 @media (min-width: 920px) {
   .card-body {
-    text-align: start;
+    text-align: initial;
     padding: 4.4375em 4.5em 3.6875em;
   }
 }
