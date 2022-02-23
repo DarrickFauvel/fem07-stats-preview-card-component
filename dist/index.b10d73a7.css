@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@200&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@400&display=swap";
 :root {
   font-size: 62.5%;
 }
@@ -160,7 +160,6 @@ body {
 .card .list-group .item-label {
   font-family: "Lexend Deca", sans-serif;
   font-size: 1.2rem;
-  font-weight: bold;
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
   letter-spacing: 0.15em;
