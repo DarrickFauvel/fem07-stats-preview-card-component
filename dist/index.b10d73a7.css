@@ -105,13 +105,13 @@ body {
 }
 .card-body {
   grid-area: body;
-  padding: 2.2em;
+  padding: 1.875em;
   text-align: center;
 }
 @media (min-width: 920px) {
   .card-body {
     text-align: start;
-    padding: 4.5em;
+    padding: 5em;
   }
 }
 .card-title {
