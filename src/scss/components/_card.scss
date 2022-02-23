@@ -1,22 +1,28 @@
 @use '../abstracts' as *;
 
 .card {
-  display: grid;
-  grid-template: auto / 1fr;
-  grid-template-areas:
-    'image'
-    'body';
   background-color: $clr-bg-card;
   color: $clr-paragraph-main;
   border-radius: 0.8rem;
   overflow: hidden;
-  max-width: 32.7rem;
+  max-width: 46rem;
   margin: 2rem 0;
 
-  @media (min-width: $breakpoint-xlg) {
-    grid-template: auto / 1fr 1fr;
-    grid-template-areas: 'body image';
+  @media (min-width: $breakpoint-lg) {
     max-width: 111rem;
+  }
+
+  .split {
+    display: grid;
+    grid-template: auto / 1fr;
+    grid-template-areas:
+      'image'
+      'body';
+
+    @media (min-width: $breakpoint-lg) {
+      grid-template: 1fr / 52% 48%;
+      grid-template-areas: 'body image';
+    }
   }
 
   &-image {
@@ -38,7 +44,7 @@
     padding: 1.875em;
     text-align: center;
 
-    @media (min-width: $breakpoint-xlg) {
+    @media (min-width: $breakpoint-lg) {
       text-align: start;
       padding: 4.5em;
     }
@@ -50,7 +56,7 @@
     line-height: 3.2rem;
     margin-bottom: 1.6rem;
 
-    @media (min-width: $breakpoint-xlg) {
+    @media (min-width: $breakpoint-lg) {
       font-size: 3.6rem;
       line-height: 4.4rem;
     }
@@ -69,10 +75,15 @@
     display: grid;
     grid-template: auto / 1fr;
     gap: 2.4rem;
+    justify-content: center;
     list-style: none;
     padding: 0;
 
-    @media (min-width: $breakpoint-xlg) {
+    @media (min-width: $breakpoint-sm) {
+      grid-template: auto / repeat(auto-fit, 100px);
+    }
+
+    @media (min-width: $breakpoint-lg) {
       grid-template: auto / repeat(3, 1fr);
       margin-top: 7.1rem;
     }

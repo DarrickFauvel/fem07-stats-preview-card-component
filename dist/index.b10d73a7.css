@@ -68,21 +68,27 @@ body {
   white-space: nowrap;
 }
 .card {
-  display: grid;
-  grid-template: auto/1fr;
-  grid-template-areas: "image" "body";
   background-color: #1b1938;
   color: rgba(255, 255, 255, 0.75);
   border-radius: 0.8rem;
   overflow: hidden;
-  max-width: 32.7rem;
+  max-width: 46rem;
   margin: 2rem 0;
 }
-@media (min-width: 1200px) {
+@media (min-width: 920px) {
   .card {
-    grid-template: auto/1fr 1fr;
-    grid-template-areas: "body image";
     max-width: 111rem;
+  }
+}
+.card .split {
+  display: grid;
+  grid-template: auto/1fr;
+  grid-template-areas: "image" "body";
+}
+@media (min-width: 920px) {
+  .card .split {
+    grid-template: 1fr/52% 48%;
+    grid-template-areas: "body image";
   }
 }
 .card-image {
@@ -93,14 +99,16 @@ body {
   mix-blend-mode: multiply;
   opacity: 0.75;
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: top right;
 }
 .card-body {
   grid-area: body;
   padding: 1.875em;
   text-align: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 920px) {
   .card-body {
     text-align: start;
     padding: 4.5em;
@@ -112,7 +120,7 @@ body {
   line-height: 3.2rem;
   margin-bottom: 1.6rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 920px) {
   .card-title {
     font-size: 3.6rem;
     line-height: 4.4rem;
@@ -129,10 +137,16 @@ body {
   display: grid;
   grid-template: auto/1fr;
   gap: 2.4rem;
+  justify-content: center;
   list-style: none;
   padding: 0;
 }
-@media (min-width: 1200px) {
+@media (min-width: 390px) {
+  .card .list-group {
+    grid-template: auto/repeat(auto-fit, 100px);
+  }
+}
+@media (min-width: 920px) {
   .card .list-group {
     grid-template: auto/repeat(3, 1fr);
     margin-top: 7.1rem;
@@ -164,11 +178,7 @@ body {
   display: grid;
   grid-template: 1fr min-content/1fr;
   padding: 0 2rem;
-}
-@media (min-width: 1200px) {
-  .container {
-    height: 100vh;
-  }
+  height: 100%;
 }
 .main {
   justify-self: center;
