@@ -20,7 +20,7 @@
       'body';
 
     @media (min-width: $breakpoint-lg) {
-      grid-template: 1fr / 52% 48%;
+      grid-template: 1fr / 51% 49%;
       grid-template-areas: 'body image';
     }
   }
