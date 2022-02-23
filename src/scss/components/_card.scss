@@ -33,12 +33,12 @@
 
   &-body {
     grid-area: body;
-    padding: 3rem;
+    padding: 1.875em;
     text-align: center;
 
     @media (min-width: $breakpoint-xlg) {
       text-align: start;
-      padding: 7.1rem 7.1rem 6rem;
+      padding: 4.5em;
     }
   }
 
