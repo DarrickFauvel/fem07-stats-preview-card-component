@@ -111,7 +111,7 @@ body {
 @media (min-width: 920px) {
   .card-body {
     text-align: start;
-    padding: 5em;
+    padding: 4.4375em 4.5em 3.6875em;
   }
 }
 .card-title {
