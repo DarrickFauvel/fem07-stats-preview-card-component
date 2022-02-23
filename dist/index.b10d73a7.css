@@ -152,18 +152,18 @@ body {
     margin-top: 7.1rem;
   }
 }
-.card .list-group .item-title {
+.card .list-group .item-stat {
   font-size: 2.4rem;
   font-weight: 700;
   color: white;
 }
-.card .list-group .item-text {
+.card .list-group .item-label {
   font-family: "Lexend Deca", sans-serif;
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  line-height: 2.5rem;
+  letter-spacing: 0.15em;
+  line-height: 2.5;
 }
 .attribution {
   display: none;
